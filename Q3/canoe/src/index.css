@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+.show {
+  display: block;
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-component {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  justify-content: space-between;
+}
+
+.form-input {
+  width: 15rem;
+  font-size: 1.5rem;
+}
+
+.submit-button {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: solid black 0.25rem;
+  border-radius: 1rem;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.submit-button:hover {
+  background-color: gainsboro;
+}

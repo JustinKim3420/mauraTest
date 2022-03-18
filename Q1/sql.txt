@@ -1,0 +1,8 @@
+--Query for SQL
+
+SELECT countries.code,(countries.govt_debt/countries.gdp_per_capita) as average
+FROM countries
+WHERE year>=DATEADD(year, -4, GETDATE());
+GROUP BY countries.code
+HAVING MIN(countries.gdp_per_capita)>=40000
+LIMIT 3;
